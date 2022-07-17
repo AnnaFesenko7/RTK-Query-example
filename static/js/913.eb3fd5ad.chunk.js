@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkRTK_Query_example=self.webpackChunkRTK_Query_example||[]).push([[913],{913:function(n,e,r){r.r(e),r.d(e,{default:function(){return a}});var t,u=r(168),o=r(31),c=r(184),p=o.ZP.p(t||(t=(0,u.Z)(["\n  line-height: 1.5;\n  padding: 10px 20px;\n  background-color: grey;\n  color: red;\n  font-size: 30px;\n  text-align: center;\n  font-weight: 900;\n  text-transform: uppercase;\n"])));function a(){return(0,c.jsx)(p,{children:"not found"})}}}]);
+//# sourceMappingURL=913.eb3fd5ad.chunk.js.map
