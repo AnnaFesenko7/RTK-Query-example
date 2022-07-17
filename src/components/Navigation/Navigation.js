@@ -15,14 +15,13 @@ const Navigation = () => {
       >
         Pokemons
       </NavLink>
-      {/* <NavLink
+      <NavLink
         style={({ isActive }) => (isActive ? activeStyle : undefined)}
         className={style.link}
-        to="/movies"
-        // activeClassName={style.active}
+        to="/todos"
       >
-        Movies
-      </NavLink> */}
+        Todos
+      </NavLink>
     </nav>
   );
 };

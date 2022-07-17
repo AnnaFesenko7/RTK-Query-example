@@ -7,7 +7,7 @@ import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 // import { ThreeDots } from 'react-loader-spinner';
 
 const HomeView = lazy(() => import('./views/HomeView'));
-
+const TodoView = lazy(() => import('./views/Todo'));
 const NotFound = lazy(() => import('./views/NotFound'));
 
 export const App = () => {
@@ -27,12 +27,7 @@ export const App = () => {
         >
           <Routes>
             <Route path="/" element={<HomeView />} />
-            {/* <Route path="movies" element={<MoviesView />} />
-
-            <Route path="movies/:movieId" element={<MovieDetailsView />}>
-              <Route path="cost" element={<CastView />} />
-              <Route path="reviews" element={<ReviewsView />}></Route>
-            </Route> */}
+            <Route path="todos" element={<TodoView />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
