@@ -7,11 +7,42 @@ export const todoApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://62ceb308486b6ce8264ac089.mockapi.io/contacts',
   }),
+  tagTypes: ['TODO'],
   endpoints: builder => ({
     fetchTodo: builder.query({
       query: () => `/todos`,
+      providesTags: ['TODO'],
+    }),
+    updateTodo: builder.mutation({
+      // note: an optional `queryFn` may be used in place of `query`
+      query: ({ id, ...patch }) => ({
+        url: `todos/${id}`,
+        method: 'PATCH',
+        body: patch,
+      }),
+    }),
+    createTodo: builder.mutation({
+      query: todoContent => ({
+        url: `todos`,
+        method: 'POST',
+        body: {
+          content: todoContent,
+        },
+      }),
+      invalidatesTags: ['TODO'],
+    }),
+    deleteTodo: builder.mutation({
+      query: todoId => ({
+        url: `todos/${todoId}`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: ['TODO'],
     }),
   }),
 });
 
-export const { useFetchTodoQuery } = todoApi;
+export const {
+  useFetchTodoQuery,
+  useDeleteTodoMutation,
+  useCreateTodoMutation,
+} = todoApi;

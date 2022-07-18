@@ -1,6 +1,6 @@
 import { useState } from 'react';
 // import { Link } from 'react-router-dom';
-import { useGetPokemonByNameQuery } from '../../services/pokemon';
+import { useGetPokemonByNameQuery } from 'services/pokemon';
 import { ThreeDots } from 'react-loader-spinner';
 function HomeView() {
   const [pokemonName, setPokemonName] = useState('');
@@ -22,7 +22,7 @@ function HomeView() {
   };
   return (
     <>
-      <h1>Pokemons</h1>
+      <h1>Search pokemons by name</h1>
       <form autoComplete="off" onSubmit={handleSubmit}>
         <input type="text" name="pokemonName" />
         <button type="submit">Search</button>

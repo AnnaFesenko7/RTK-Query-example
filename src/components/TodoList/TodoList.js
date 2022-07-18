@@ -1,8 +1,10 @@
+import TodoListItem from 'components/TodoListItem/TodoListItem';
+
 export default function TodoList({ todos }) {
   return (
     <ul>
       {todos.map(todo => (
-        <li key={todo.id}>{todo.content}</li>
+        <TodoListItem key={todo.id} {...todo} />
       ))}
     </ul>
   );

@@ -4,11 +4,11 @@ import AppBar from './Appbar/Appbar';
 import { Routes, Route } from 'react-router-dom';
 
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
-// import { ThreeDots } from 'react-loader-spinner';
 
 const HomeView = lazy(() => import('./views/HomeView'));
 const TodoView = lazy(() => import('./views/Todo'));
 const NotFound = lazy(() => import('./views/NotFound'));
+const CreateTodoView = lazy(() => import('./views/CreateTodo'));
 
 export const App = () => {
   return (
@@ -28,7 +28,7 @@ export const App = () => {
           <Routes>
             <Route path="/" element={<HomeView />} />
             <Route path="todos" element={<TodoView />} />
-
+            <Route path="todos/create" element={<CreateTodoView />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

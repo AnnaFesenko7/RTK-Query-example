@@ -1,9 +1,17 @@
 import TodoList from 'components/TodoList/TodoList';
-import { useFetchTodoQuery } from '../../services/todos';
+import { Link } from 'react-router-dom';
+import { useFetchTodoQuery } from 'services/todos';
+import { ThreeDots } from 'react-loader-spinner';
 
 function TodoView() {
-  const { data } = useFetchTodoQuery();
+  const { data: todos, isFetching } = useFetchTodoQuery();
 
-  return <div>{data && <TodoList todos={data} />}</div>;
+  return (
+    <div>
+      <Link to="/todos/create">Create Todo</Link>
+      {isFetching && <ThreeDots height="100" width="100" color="blue" />}
+      {todos && <TodoList todos={todos} />}
+    </div>
+  );
 }
 export default TodoView;
