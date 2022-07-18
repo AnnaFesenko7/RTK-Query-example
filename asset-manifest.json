@@ -1,23 +1,25 @@
 {
   "files": {
     "main.css": "/RTK-Query-example/static/css/main.f7451ed1.css",
-    "main.js": "/RTK-Query-example/static/js/main.9f4cafaf.js",
-    "static/js/192.ae2a29e5.chunk.js": "/RTK-Query-example/static/js/192.ae2a29e5.chunk.js",
-    "static/js/275.825a901e.chunk.js": "/RTK-Query-example/static/js/275.825a901e.chunk.js",
+    "main.js": "/RTK-Query-example/static/js/main.12b62324.js",
+    "static/js/192.a636bdea.chunk.js": "/RTK-Query-example/static/js/192.a636bdea.chunk.js",
+    "static/js/521.519650f8.chunk.js": "/RTK-Query-example/static/js/521.519650f8.chunk.js",
     "static/js/913.eb3fd5ad.chunk.js": "/RTK-Query-example/static/js/913.eb3fd5ad.chunk.js",
-    "static/js/373.9585bbaa.chunk.js": "/RTK-Query-example/static/js/373.9585bbaa.chunk.js",
+    "static/js/363.364e17cb.chunk.js": "/RTK-Query-example/static/js/363.364e17cb.chunk.js",
+    "static/js/373.da2e03ad.chunk.js": "/RTK-Query-example/static/js/373.da2e03ad.chunk.js",
     "static/js/703.539c4710.chunk.js": "/RTK-Query-example/static/js/703.539c4710.chunk.js",
     "index.html": "/RTK-Query-example/index.html",
     "main.f7451ed1.css.map": "/RTK-Query-example/static/css/main.f7451ed1.css.map",
-    "main.9f4cafaf.js.map": "/RTK-Query-example/static/js/main.9f4cafaf.js.map",
-    "192.ae2a29e5.chunk.js.map": "/RTK-Query-example/static/js/192.ae2a29e5.chunk.js.map",
-    "275.825a901e.chunk.js.map": "/RTK-Query-example/static/js/275.825a901e.chunk.js.map",
+    "main.12b62324.js.map": "/RTK-Query-example/static/js/main.12b62324.js.map",
+    "192.a636bdea.chunk.js.map": "/RTK-Query-example/static/js/192.a636bdea.chunk.js.map",
+    "521.519650f8.chunk.js.map": "/RTK-Query-example/static/js/521.519650f8.chunk.js.map",
     "913.eb3fd5ad.chunk.js.map": "/RTK-Query-example/static/js/913.eb3fd5ad.chunk.js.map",
-    "373.9585bbaa.chunk.js.map": "/RTK-Query-example/static/js/373.9585bbaa.chunk.js.map",
+    "363.364e17cb.chunk.js.map": "/RTK-Query-example/static/js/363.364e17cb.chunk.js.map",
+    "373.da2e03ad.chunk.js.map": "/RTK-Query-example/static/js/373.da2e03ad.chunk.js.map",
     "703.539c4710.chunk.js.map": "/RTK-Query-example/static/js/703.539c4710.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7451ed1.css",
-    "static/js/main.9f4cafaf.js"
+    "static/js/main.12b62324.js"
   ]
 }
